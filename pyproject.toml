@@ -33,10 +33,6 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["src/nerv_mesh"]
 
-[tool.hatch.build.targets.wheel.force-include]
-"src/nerv_mesh/_defaults" = "nerv_mesh/_defaults"
-"src/nerv_mesh/_builtin_skills" = "nerv_mesh/_builtin_skills"
-
 [tool.ruff]
 line-length = 100
 target-version = "py312"
