@@ -95,5 +95,5 @@ def _init_components(config: AppConfig):
 
 
 def _print_banner() -> None:
-    console.print("[bold]nerv-mesh[/bold] v0.1.0 — AI Coding Agent")
+    console.print("[bold]nerv-mesh[/bold] v0.1.0 — General-Purpose AI Agent")
     console.print("Type [bold]exit[/bold] to quit.\n")

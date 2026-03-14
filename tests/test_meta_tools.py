@@ -16,7 +16,7 @@ def test_introspect(tmp_path, monkeypatch):
     introspect = next(t for t in tools if t.name == "introspect")
     result = introspect.invoke({})
     assert "test-model" in result
-    assert "research" in result
+    assert "skill-creator" in result
 
 
 def test_skill_create(tmp_path, monkeypatch):
