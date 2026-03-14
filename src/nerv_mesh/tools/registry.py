@@ -9,7 +9,10 @@ from nerv_mesh.sandbox.local import LocalSandbox
 from nerv_mesh.skills import SkillLoader
 
 from .builtin import make_builtin_tools
+from .interaction import make_interaction_tools
 from .meta import make_meta_tools
+from .search import make_search_tools
+from .web import make_web_tools
 
 
 def aggregate_tools(
@@ -17,9 +20,12 @@ def aggregate_tools(
     sandbox: LocalSandbox,
     skills: SkillLoader | None = None,
 ) -> list[BaseTool]:
-    """Collect all available tools: builtins + meta + config-defined."""
+    """Collect all available tools: builtins + search + web + interaction + meta + config."""
     tools: list[BaseTool] = []
     tools.extend(make_builtin_tools(sandbox))
+    tools.extend(make_search_tools())
+    tools.extend(make_web_tools())
+    tools.extend(make_interaction_tools())
     if skills:
         tools.extend(make_meta_tools(config, skills))
     tools.extend(_load_config_tools(config.tools))
