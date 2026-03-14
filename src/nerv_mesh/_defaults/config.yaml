@@ -1,8 +1,9 @@
-# nerv-mesh infrastructure config
+# ~/.nerv-mesh/config.yaml
+# Infrastructure settings.
 
 sandbox:
-  mode: "local"
-  timeout: 30
+  mode: "local"        # local | docker
+  timeout: 30          # command timeout in seconds
 
 gateway:
   host: "0.0.0.0"

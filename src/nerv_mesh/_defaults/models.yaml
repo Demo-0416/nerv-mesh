@@ -1,9 +1,17 @@
-# nerv-mesh model providers
-# Edit this file to configure your LLM providers.
+# ~/.nerv-mesh/models.yaml
+# LLM provider configurations. Supports any OpenAI-compatible API.
+#
+# Example (Alibaba Coding Plan):
+#   default:
+#     provider: "langchain_openai:ChatOpenAI"
+#     base_url: "https://coding.dashscope.aliyuncs.com/v1"
+#     api_key: "sk-sp-xxx"
+#     model: "MiniMax-M2.5"
+#     temperature: 0.7
 
 default:
   provider: "langchain_openai:ChatOpenAI"
-  base_url: "https://coding.dashscope.aliyuncs.com/v1"
-  api_key: "YOUR_API_KEY_HERE"
-  model: "MiniMax-M2.5"
+  base_url: ""
+  api_key: ""
+  model: ""
   temperature: 0.7

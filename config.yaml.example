@@ -1,9 +1,0 @@
-# ~/.nerv-mesh/config.yaml — Infrastructure settings
-
-sandbox:
-  mode: "local"        # local | docker
-  timeout: 30          # seconds
-
-gateway:
-  host: "0.0.0.0"
-  port: 8000

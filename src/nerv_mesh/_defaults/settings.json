@@ -5,6 +5,12 @@
     "max_facts": 50,
     "inject_limit": 15
   },
+  "feishu": {
+    "app_id": "",
+    "app_secret": "",
+    "encrypt_key": "",
+    "verification_token": ""
+  },
   "skills": {
     "dirs": []
   }
