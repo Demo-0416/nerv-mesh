@@ -1,5 +1,8 @@
 {
   "default_model": "default",
+  "language": "zh-CN",
+  "verbose": false,
+  "auto_confirm": false,
   "memory": {
     "enabled": true,
     "max_facts": 50,

@@ -15,7 +15,7 @@ def home_dir() -> Path:
 def ensure_home() -> Path:
     """Create the home directory structure if it doesn't exist."""
     h = home_dir()
-    for sub in ["skills/custom", "threads"]:
+    for sub in ["skills/custom", "threads", "memory"]:
         (h / sub).mkdir(parents=True, exist_ok=True)
     return h
 

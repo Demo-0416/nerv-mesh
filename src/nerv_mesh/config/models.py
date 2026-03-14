@@ -93,6 +93,9 @@ class Settings(BaseModel):
     """Contents of settings.json — user preferences and channel configs."""
 
     default_model: str = "default"
+    language: str = "zh-CN"
+    verbose: bool = False
+    auto_confirm: bool = False
     memory: MemoryConfig = Field(default_factory=MemoryConfig)
     feishu: FeishuConfig = Field(default_factory=FeishuConfig)
     skills: SkillsConfig = Field(default_factory=SkillsConfig)
