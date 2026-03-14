@@ -11,6 +11,9 @@ venv/
 .env
 .env.local
 
+.claude/
+CLAUDE.md
+
 # Runtime data (lives in ~/.nerv-mesh/)
 .nerv-mesh/
 
