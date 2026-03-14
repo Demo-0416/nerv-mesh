@@ -1,0 +1,17 @@
+{
+  "default_model": "default",
+  "memory": {
+    "enabled": true,
+    "max_facts": 50,
+    "inject_limit": 15
+  },
+  "feishu": {
+    "app_id": "cli_your_app_id",
+    "app_secret": "your_app_secret",
+    "encrypt_key": "your_encrypt_key",
+    "verification_token": "your_verification_token"
+  },
+  "skills": {
+    "dirs": []
+  }
+}
