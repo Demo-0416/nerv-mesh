@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+.venv/
+venv/
+
+.env
+.env.local
+
+# Runtime data (lives in ~/.nerv-mesh/)
+.nerv-mesh/
+
+# Root-level config files (remnants of old layout, now in ~/.nerv-mesh/)
+/config.yaml
+/models.yaml
+/settings.json
+/mcp.json
+
+*.log
+*.tmp
+
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+
+.DS_Store
+uv.lock

@@ -1,0 +1,11 @@
+{
+  "default_model": "default",
+  "memory": {
+    "enabled": true,
+    "max_facts": 50,
+    "inject_limit": 15
+  },
+  "skills": {
+    "dirs": []
+  }
+}
